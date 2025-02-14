@@ -15,7 +15,7 @@ const BookList = () => {
 
   // Fetching data from the backend API
   useEffect(() => {
-    fetch('http://localhost:5000/books') // Replace with your actual API endpoint
+    fetch('http://localhost:5000/books') 
       .then((response) => response.json())
       .then((data) => {
         setBooks(data);
