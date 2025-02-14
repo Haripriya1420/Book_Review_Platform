@@ -11,9 +11,9 @@ const Home = () => {
   // Fetch featured books when the component loads
   useEffect(() => {
     axios
-      .get("http://localhost:5000/featured-books")  // Replace with your backend route
+      .get("http://localhost:5000/featured-books") 
       .then((res) => {
-        setFeaturedBooks(res.data);  // Set the fetched books as featured
+        setFeaturedBooks(res.data);  
         setLoading(false);
       })
       .catch((err) => {
